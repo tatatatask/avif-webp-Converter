@@ -1,52 +1,52 @@
 # AVIF & WebP Converter
 
-画像ファイル（jpg,png）をAVIFとWebP形式に変換します。
+画像ファイル（jpg,png）をAVIFとWebP形式に変換
 
-## 必要条件
+## Requirements
 
-- Node.js (Volta推奨)
+- Node.js v23.10.0
 
-## インストール方法
+## Install
 
 ```bash
 cd avif-webp-Converter
 npm install
 ```
+## Directory Structure
 
-## 使用方法
-
-srcディレクトリに画像を格納
-→ (macOS)action.command or (Windows)action.batをダブルクリック、コマンドプロンプトで実行
-
-### macOSの場合
-
-```bash
-./action.command
 ```
+├── dist		---		(out)
+├── src			---		(in)
+├── README.md
+├── action.bat			---		(Windows)
+├── action.command		---		(macOS)
+├── package-lock.json
+├── package.json
+└── script.js
+```
+
+## How to Use
+
+1. srcディレクトリに画像を格納
+2. (macOS)action.command または (Windows)action.batをダブルクリック
+3. コマンドプロンプトで処理が実行されます
+4. distディレクトリに出力される
+
+### コマンドで実行する場合
+
 ```bash
 npm run convert
 ```
 
-### Windowsの場合
+## Options
 
-```
-action.bat
-```
-```
-npm run convert
-```
-
-## 設定
-
-`config.js`ファイルを編集することで、変換設定をカスタマイズできます。以下のオプションを変更可能：
-
+`script.js`ファイルを編集することで、変換設定をカスタマイズできます。以下のオプションを変更可能：
 - 入力ディレクトリ
 - 出力ディレクトリ
 - 品質設定
-- 変換するフォーマット（AVIFのみ、WebPのみ、または両方）
+- リサイズ最大サイズ
 
-## 対応入力フォーマット
+## Supported Input Formats
 
 - JPG/JPEG
 - PNG
-
