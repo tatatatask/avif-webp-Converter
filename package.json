@@ -1,0 +1,16 @@
+{
+	"name": "avif & webp Converter",
+	"author": "tatatatask",
+	"version": "0.0.0",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"convert": "node ./script.js"
+	},
+	"devDependencies": {
+		"sharp": "^0.33.5"
+	},
+	"volta": {
+		"node": "23.10.0"
+	}
+}
